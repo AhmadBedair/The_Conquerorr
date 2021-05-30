@@ -85,10 +85,6 @@ public class Player {
 			c.setDefendingArmy(newArmy);
 			
 			
-		}else if(type.equals("Infantry")) {
-			
-		}else {
-			
 		}
 		
 		
