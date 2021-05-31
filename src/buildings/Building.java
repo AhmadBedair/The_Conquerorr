@@ -76,7 +76,7 @@ abstract public class Building {
 		}
 		
 		
-		
+		this.setCoolDown(false);
 	}
 	
 	
