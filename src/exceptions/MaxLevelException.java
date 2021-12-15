@@ -1,14 +1,11 @@
 package exceptions;
 
-public class MaxLevelException extends BuildingException{
+public class MaxLevelException extends BuildingException {
 
-	
-	public MaxLevelException() {
-		super();
-	}
-	
-	public MaxLevelException(String s) {
-		super(s);
-	}
-	
+    public MaxLevelException() {
+    }
+
+    public MaxLevelException(String message) {
+        super(message);
+    }
 }

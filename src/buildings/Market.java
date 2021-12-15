@@ -1,21 +1,38 @@
 package buildings;
 
-public class Market extends EconomicBuilding{
+import exceptions.BuildingInCoolDownException;
+import exceptions.MaxLevelException;
 
-	public Market() {
-		super(1500,700);
-	}
-	
-	
-	
-	public int harvest() {
-		if(this.getLevel()==1) {
-			return 1000;
-		}else if (this.getLevel()==2) {
-			return 1500;
-		}else {
-			return 2000;
-		}
-	}
-	
+public class Market extends EconomicBuilding {
+
+    public Market() {
+        super(1500, 700);
+    }
+
+
+    public void upgrade() throws BuildingInCoolDownException, MaxLevelException {
+        super.upgrade();
+        if (super.getLevel() == 1) {
+            super.setUpgradeCost(1000);
+            super.setLevel(2);
+        } else if (super.getLevel() == 2)
+            super.setLevel(3);
+    }
+
+    @Override
+    public int harvest() {
+        int totalGold = 0;
+        switch (super.getLevel()) {
+            case 1:
+                totalGold = 1000;
+                break;
+            case 2:
+                totalGold = 1500;
+                break;
+            case 3:
+                totalGold = 2000;
+                break;
+        }
+        return totalGold;
+    }
 }

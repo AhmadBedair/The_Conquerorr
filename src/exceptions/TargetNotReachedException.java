@@ -1,13 +1,11 @@
 package exceptions;
 
-public class TargetNotReachedException extends ArmyException{
+public class TargetNotReachedException extends ArmyException {
 
-	public TargetNotReachedException() {
-		super();
-	}
-	
-	public TargetNotReachedException(String s) {
-		super(s);
-	}
-	
+    public TargetNotReachedException() {
+    }
+
+    public TargetNotReachedException(String message) {
+        super(message);
+    }
 }
