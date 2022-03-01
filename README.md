@@ -8,3 +8,7 @@ In order to achieve this goal, the player have the option of building various ty
 - OOP concepts (Inheritance - Polymorphism - Abstraction - Encapsulation ).
 - Exception Handling.
 - GUI
+
+<p align="center">
+  <h2 align="center">Visitor's Count <img align="center" src="https://profile-counter.glitch.me/amir-ammar/count.svg" alt="Visitor Count" /></h2>
+</p>
